@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fastlane_background">#10B981</color>
+    <color name="fastlane_background_dark">#101717</color>
+    <color name="search_opaque">#10B981</color>
+    <color name="card_default_background">#10B981</color>
+    <color name="card_default_background_dark">#172421</color>
+    <color name="semi_red">#10B981</color>
+    <color name="red">#10B981</color>
+    <color name="light_red">#6EE7B7</color>
+    <color name="dark_red">#065F46</color>
+    <color name="default_background_gradient_start">#101414</color>
+    <color name="default_background_gradient_end">#101414</color>
+    <color name="scheme_grey_background">#101414</color>
+    <color name="scheme_grey_background_dark">#101414</color>
+    <color name="scheme_grey_shelf_background_dark">#101414</color>
+    <color name="scheme_grey_card_background_dark">#18201E</color>
+    <color name="shelf_background_dark">#101414</color>
+</resources>

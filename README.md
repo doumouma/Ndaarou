@@ -1,3 +1,20 @@
+# Ndaarou
+
+Personal Android TV application based on SmartTube, with an independent package
+(`com.ndaarou.tv`), original emerald/graphite branding and a local signing key.
+
+- Build: `bash scripts/build-ndaarou.sh` (JDK17, Android SDK, local signing required).
+- TV artifact: `smarttubetv/build/outputs/apk/stfdroid/release/*armeabi-v7a.apk`.
+- No upstream APK updater or voice bridge installation in Ndaarou settings.
+- Signing files remain local and ignored by Git. Preserve them for future updates.
+- Device-code sign-in is inherited from SmartTube and requires approval by the user.
+- Validation scope and baseline: [.notes/NDAAROU.md](.notes/NDAAROU.md).
+
+SmartTube copyright and MIT license are retained in [LICENSE](LICENSE) and bundled
+in the APK as `assets/LICENSE-SmartTube.txt`. Upstream documentation follows.
+
+---
+
 [<img src="images/badge_fdroid.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/app.smarttube.fdroid/)
 [<img src="images/badge_github.png" alt="Get it on GitHub" height="80">](https://github.com/yuliskov/SmartTube/releases)
 

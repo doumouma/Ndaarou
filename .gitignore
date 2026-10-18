@@ -71,3 +71,18 @@ tmp/
 fabric.properties
 *BAK.java
 hs_err_pid*.log
+
+# Ndaarou local signing and verification artifacts
+keystore.properties
+*.jks
+*.keystore
+.private/
+artifacts/
+
+# Local editor, dependency and environment files
+.vscode/
+node_modules/
+vendor/
+.env
+.env.*
+*.log

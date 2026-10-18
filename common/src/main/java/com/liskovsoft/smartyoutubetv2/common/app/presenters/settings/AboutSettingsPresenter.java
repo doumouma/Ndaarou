@@ -44,15 +44,13 @@ public class AboutSettingsPresenter extends BasePresenter<Void> {
 
         String country = LocaleUtility.getCurrentLocale(getContext()).getCountry();
 
-        appendUpdateCheckButton(settingsPresenter);
-
-        appendAutoUpdateSwitch(settingsPresenter);
-
-        appendUpdateChangelogButton(settingsPresenter);
-
-        appendUpdateSource(settingsPresenter);
-
-        appendInstallBridge(settingsPresenter);
+        if (!"com.ndaarou.tv".equals(getContext().getPackageName())) {
+            appendUpdateCheckButton(settingsPresenter);
+            appendAutoUpdateSwitch(settingsPresenter);
+            appendUpdateChangelogButton(settingsPresenter);
+            appendUpdateSource(settingsPresenter);
+            appendInstallBridge(settingsPresenter);
+        }
 
         if (!Helpers.equalsAny(country, "RU", "UA")) {
             appendDonation(settingsPresenter);

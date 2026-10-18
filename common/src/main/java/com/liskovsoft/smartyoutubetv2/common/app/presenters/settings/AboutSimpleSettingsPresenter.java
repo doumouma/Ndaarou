@@ -28,16 +28,18 @@ public class AboutSimpleSettingsPresenter extends BasePresenter<Void> {
 
     public void show() {
         String mainTitle = String.format("%s %s",
-                getContext().getString(R.string.app_name) + " MOD",
+                getContext().getString(R.string.app_name),
                 AppInfoHelpers.getAppVersionName(getContext()));
 
         AppDialogPresenter settingsPresenter = AppDialogPresenter.instance(getContext());
 
-        appendAutoUpdateSwitch(settingsPresenter);
-
-        appendUpdateCheckButton(settingsPresenter);
-
-        appendInstallBridge(settingsPresenter);
+        if ("com.ndaarou.tv".equals(getContext().getPackageName())) {
+            settingsPresenter.appendSingleButton(UiOptionItem.from("SmartTube - MIT - Copyright (c) 2020-present yuliskov"));
+        } else {
+            appendAutoUpdateSwitch(settingsPresenter);
+            appendUpdateCheckButton(settingsPresenter);
+            appendInstallBridge(settingsPresenter);
+        }
 
         settingsPresenter.showDialog(mainTitle);
     }
